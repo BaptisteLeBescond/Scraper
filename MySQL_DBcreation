@@ -1,0 +1,7 @@
+CREATE TABLE mysqltest.articlesarticles (
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(200),
+  body VARCHAR(1000),
+  created DATETIME DEFAULT NOW(),
+  link VARCHAR(200) UNIQUE
+);
