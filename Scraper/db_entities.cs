@@ -10,7 +10,7 @@ namespace Scraper
     // DBcontext class : handles all interaction with the MySQL DB
     public class db_Entities : DbContext
     {
-        public db_Entities() : base(nameOrConnectionString: "DBconnection") { }
+        public db_Entities() : base(nameOrConnectionString: "LocalDBconnection") { }
 
         public DbSet<Article> Article { get; set; }
     }

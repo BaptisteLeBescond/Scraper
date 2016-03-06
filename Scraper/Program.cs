@@ -20,7 +20,7 @@ namespace Scraper
             var context = new db_Entities();
 
             //// instanciation of a Firefox browser (using Selenium)
-            //FirefoxDriver firefox = new FirefoxDriver();
+            FirefoxDriver firefox = new FirefoxDriver();
 
             //// go to job website of interest (Indeed.com)
             //firefox.Navigate().GoToUrl("http://www.indeed.fr/emplois?q=Csharp&l=Paris+%2875%29");
@@ -65,17 +65,17 @@ namespace Scraper
             //}
             
             
-            // write all articles from the DB in the console
-            var articles = context.Article.ToList();
-            foreach (var art in articles)
-            {
-                Console.WriteLine(art.id);
-                Console.WriteLine(art.title);
-                Console.WriteLine(art.body);
-                Console.WriteLine(art.created);
-                Console.WriteLine(art.link);
+            //// write all articles from the DB in the console
+            //var articles = context.Article.ToList();
+            //foreach (var art in articles)
+            //{
+            //    Console.WriteLine(art.id);
+            //    Console.WriteLine(art.title);
+            //    Console.WriteLine(art.body);
+            //    Console.WriteLine(art.created);
+            //    Console.WriteLine(art.link);
 
-            }
+            //}
 
         }
     }
