@@ -23,5 +23,7 @@ namespace Scraper
 
         public DateTime created { get; set; }
 
+        public string source { get; set; }
+
     }
 }
